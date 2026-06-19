@@ -2,9 +2,8 @@ from pathlib import Path
 import os
 def readfilesandfolders():
     path = Path("")
-    items = list(path.rglob("*")) # Recursively yield all existing files (of any kind,
-    # including directories) matching the given relative pattern, anywhere in
-    # this subtree.
+    items = list(path.rglob("*")) # recursively find every single file, folder, and 
+    # subdirectory within a given directory tree
     for i,items in enumerate(items):
         print(f"{i+1} : {items} ")
 
