@@ -35,17 +35,17 @@
 
 # Raise keyword Usecase: throwing error manually
 
-age = int(input("ENter your age: "))
+# age = int(input("ENter your age: "))
 
-try:
-    if age<10 or age>18:
-        raise ValueError("Your age must be between 10 and 18.")
-    else:
-        print("Welcome to the college")
-except Exception as err:
-    print(f"An error occured as {err}")
+# try:
+#     if age<10 or age>18:
+#         raise ValueError("Your age must be between 10 and 18.")
+#     else:
+#         print("Welcome to the college")
+# except Exception as err:
+#     print(f"An error occured as {err}")
     
-print("The college will open soon")
+# print("The college will open soon")
 
 
 
