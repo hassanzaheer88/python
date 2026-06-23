@@ -196,5 +196,115 @@
 
 # ------------------------------------------------------------------------------
 
+# ------------------ Polymorphism --------------------
+
+# A same name have many different forms.
 
 
+# class Animal:
+#     def __init__(self,name):
+#         self.name = name        
+#     def show(self):
+#         print(f"Hello your name is {self.name}")
+        
+
+# class Human(Animal):   
+#     def __init__(self, name,age):
+#         super().__init__(name)                    
+#         self.age = age
+#     def show(self):     # Concept of Polymorphism. (Same name different forms)
+#         print(f"Hello your name is {self.name}, {self.age}")
+# ------------------------------------------------------------------
+
+# def show():
+#     print("How are you?")
+
+# def show():
+#     print("You are best.")      # Pyhton will override , and this will print.
+
+# show()          # Output: You are best.
+# ---------------------------------------------------------
+# class Animal:
+#     def show(self):
+#         print("Hello i am man")
+
+# class Human(Animal):
+#     def show(self):         # Methode Overriding:As child class Human() has show() so it will be override the parent show(). 
+#         print("How are you ")
+
+# obj = Human()           
+# obj.show()      # Output: How are you 
+
+
+# Note: Python does Not support Method Overloading.In Python the latest 
+# definition will overwrite the previous one.
+
+# --------------------------------------------------------------------
+
+# ----------- Duck Typing ---------------
+
+# class Animal:
+#     def show(self):
+#         print("I am Animal class method ")
+        
+# class Human:
+#     def show(self):
+#         print("I am human class method ")
+        
+# Different classes will have different objects
+# Same name methods but their classes are different, there is NO Parent child relationship.
+
+# obj = Animal()
+# obj2 = Human()
+
+# obj.show()      # Output: I am Animal class method 
+# obj2.show()     # Output: I am human class method
+
+# ------------------------------------------------------------------
+
+# Public and protected are same in python, Protected method does not work in python 
+# but it works in other lnguages like c++ , java.
+
+# Private keyword
+
+# class Factory:
+#     __a = "pune"        # __ is used for make private something.
+#     def __show(self):
+#         print("This is a pune factory. ")
+        
+# obj = Factory()
+# obj.__a           # Output: 'Factory' object has no attribute '__a'
+# obj.__show()        # Output: 'Factory' object has no attribute '__show'
+
+# ---------------------------------------------------------------------------
+
+# One way to access private members and methods.
+
+# class Factory:
+#     __a = "pune"        
+#     def show(self):
+#         print(Factory.__a)
+        
+# obj = Factory()
+        
+# obj.show()      # Output: pune
+
+# -------------------------------------------------------------------------------
+
+# class Demo:
+#     def __init__(self):
+#         self.name = "Public member"     # Public
+#         self._age = 21                  # Protected: can be change and can be accessed.
+#         self.__salary = 20000           # Private
+    
+#     def show(self):
+#         print("Inside the class:")
+#         print("Public" ,self.name)
+#         print("Protected" ,self._age)
+#         print("Private" ,self.__salary)         # Is is inside the class method.
+        
+# obj = Demo()
+# obj.show()          # Here all the members will show because private member is present in method of class.
+# obj.__salary        # Output: 'Demo' object has no attribute '__salary'
+
+# --------------------------------------------------------------------------------------------
