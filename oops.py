@@ -308,3 +308,44 @@
 # obj.__salary        # Output: 'Demo' object has no attribute '__salary'
 
 # --------------------------------------------------------------------------------------------
+
+# ---------- Abstraction ------------------
+# Abstraction does not exist in python but we can achieve it using a 
+# library we will see what is a library later.
+
+# from abc import ABC, abstractmethod
+
+# class Abstract(ABC):
+#     @abstractmethod
+#     def parameter(self):
+#         pass
+    
+#     @abstractmethod
+#     def area(self):
+#         pass
+
+# class Square(Abstract):
+#     def __init__(self,side):
+#         self.side = side
+        
+#     def parameter(self):
+#         print("This is parameter method")
+
+#     def area(self):
+#         print("This is area method")
+        
+# class Circle(Abstract):
+#     def __init__(self,radius):
+#         self.radius = radius
+        
+#     def parameter(self):
+#         print("This is parameter2 method")
+
+#     def area(self):
+#         print("This is area2 method")
+
+# obj = Square(7)
+
+# obj2 = Circle(12)
+
+# ------------------------------------------------------------------------------
