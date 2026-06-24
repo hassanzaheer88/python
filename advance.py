@@ -85,4 +85,59 @@
 
 # ------------------------------------------------------------
 
+# args: is used for capturing multiple arguments.
+
+# def addition(a,b,c,d): # at each time ,we have to write arguments.
+#     print(a+b+c+d)
+
+# addition(2,3,5,6)
+
+# so *args is used for capturing multiple arguments.
+
+# def addition(*a):
+#     sum = 0
+#     for i in a:
+#         sum = sum + i
+    
+#     print(sum) 
+
+# addition(2,3,5,6,34,5,532,32,2,3,23,3,4,5,552,32)
+
+# Kwargs: is used for capturing keyword(key values) arguments.
+
+# def addition(**kwargs):
+#     print(kwargs)
+
+# addition( a= 12, c=24, d=34)        # keword aguments: a = 12 ,b = 23
+# # Output: {'a': 12, 'c': 24, 'd': 34}
+
+# --------------------------------------------------------------------------------
+
+# def information(**kwargs):
+#     print("Your Information is\n")
+#     for i in kwargs:
+#         print(f"{i} : {kwargs[i]}")
+
+# information(name = "Akash",age = 23, designation = "Ai/ML")
+# -------------------------------------------------------------------
+
+# Use In Decorators
+
+# def decorator(func):       
+#     def wrapper(*args,**kwargs):       
+#         print("The addition to your numbers are")
+#         func(*args,**kwargs)
+#         print("Thank you")
+#     return wrapper
+
+
+# @decorator
+# def addition(a,b):
+#     print(f"Sum is {a+b}.")
+    
+# addition(34,21)
+
+# ---------------------------------------------------------------------
+
+
 
