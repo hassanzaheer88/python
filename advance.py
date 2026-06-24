@@ -1,6 +1,7 @@
 
 
 # ------------------ Dunder Methods --------------------
+
 # Dunder= double underscore
 
 # class Animal:
