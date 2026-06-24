@@ -38,7 +38,51 @@
 
 # print(obj + (obj2,obj3))        # Output: The sum is 31
 
+# ---------- Decorator -------------------------
+
+# class Animal:
+#     @property
+#     def show(self):
+#         print("Hello how are you ")
+
+# obj = Animal()
+# # obj.show()          # Hello how are you
+# obj.show            # Hello how are you , because of use of decorator. @property
+# ---------------------------------------------------------------------------------------------
+ 
+# def decorator(func):
+#     def wrapper():
+#         print("I will run before the Function")
+#         func()
+#         print("I will run after the Function")
+#     return wrapper
 
 
+# @decorator
+# def hello():
+#     print("Hello How are you? ")
+    
+# hello()
+
+# ----------------------------------------------------
+
+# When parameters are used in functions.
+
+# def decorator(func):        # It takes actual function . Here func = hello()
+#     def wrapper(a,b):       # It takes parameterrs.
+#         print("The addition to your numbers are")
+#         func(a,b)
+#         print("Thank you")
+#     return wrapper
+
+
+# @decorator
+# def addition(a,b):
+#     print(f"Sum is {a+b}.")
+    
+# addition(34,21)
+
+
+# ------------------------------------------------------------
 
 
