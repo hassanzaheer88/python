@@ -174,5 +174,67 @@
 
 # ------------------------------------------------------
 
+# ------------------- lambda Functions ------------------ 
 
+# A ususal method: 
+
+# def addition(a,b):
+#     print(a+b)
+    
+# addition(2,3)
+
+# lambda function is used to write the above function in 1 line.
+# lambda expression should always be stored in variable. Then that variable will become object and we can use this object anywhere.
+
+# addition = lambda a,b : print(a+b)
+# addition(2,3)
+# ----------------------------------------------------
+
+# addition = lambda a : "even" if a%2 == 0 else "odd"
+# print(addition(22))
+
+# ------------------------------------------------------
+
+# --------- Map, filter ------------------
+
+# a = [1,2,3,4,5]
+
+# res = map(lambda x: x*2,a)
+# print(res)      # Output: <map object at 0x0000014E7494B7C0>
+# print(list(res))
+
+# ----------- we can also use function ------------
+
+
+# a = [1,2,3,4,5]
+
+# def double(x):
+#     return x*2
+
+# res = map(double,a)
+# print(list(res))
+
+
+# ------------------------ filter ----------------
+
+# filter works on True and false.
+
+# def even(x):
+#     if x%2 == 0:
+#         return True
+#     else:
+#         return False
+    
+# a = [1,2,3,4,5,6]
+# result = filter(even,a)
+# print(list(result))
+
+
+# -------------------------------------------------
+
+# a = [1,2,3,4,5,6]
+# result = filter(lambda x : True if x%2==0 else False , a )
+# print(list(result))
+
+# ------------------------------------------------------
 
