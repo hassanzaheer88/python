@@ -132,12 +132,47 @@
 
 
 # @decorator
-# def addition(a,b):
-#     print(f"Sum is {a+b}.")
+# def addition(a,b,c,d):      # here any number of prameters cab take.
+#     print(f"Sum is {a+b+c+d}.")
     
-# addition(34,21)
+# addition(34,21,2,3)
 
 # ---------------------------------------------------------------------
+
+
+
+# Termary Operation
+# a = 12
+# print("even") if a%2==0 else print("Odd")
+
+# ------------ Comprehension Method -----
+
+# Usual  method
+# l = []
+# for i in range(1,21):
+#     if i%2 == 0:
+#         l.append(i)
+
+# print(l)  
+# These 4 to 5 lines can be reduced to 1 line.
+
+# --------- List Comprehension -------------
+# structure: [variable(needed to be append) loop if condition]
+
+# l = [i for i in range(1,21) if i%2==0 ]
+# print(l)
+
+# ------------- Dictionary Comprehension ------------
+
+# l = {i:i**2 for i in range(1,10)}
+# print(l)
+
+# -------- Set Comprehension ------------------------
+
+# l = {x*x for x in range(1,11) if x%2==0}
+# print(l)
+
+# ------------------------------------------------------
 
 
 
