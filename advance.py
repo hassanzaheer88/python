@@ -238,3 +238,38 @@
 
 # ------------------------------------------------------
 
+# ------------- Modules and Packages -------------------
+
+# modules = import another file.
+
+# I have created maths.py so import here and use it's function. this is known as Modules.
+
+# import maths
+# ans = maths.addition(12,14)
+# print(ans)
+
+# I can access functions directly.
+
+# from maths import addition
+# print(addition(23,34))
+
+# ----------- In-build Modules ------------------
+
+# import math
+# print(math.sqrt(4))
+
+# --------------- Packages --------------------
+
+# A package is a folder that contains one or more modules.
+
+# Import from One folder that is from packages.
+
+# from packages import hello
+# from packages import hello,maths1
+
+# --------------------------------------------------------------
+
+# Import from SubFolder.
+# from packages.packages1 import hello,maths1
+
+# ----------------------------------------------------------------
