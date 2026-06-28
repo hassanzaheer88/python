@@ -1,0 +1,19 @@
+[
+  {
+    "name": "faiz",
+    "age": 19,
+    "email": "faiz123",
+    "pin": "ceaa28bba4caba687dc31b1bbe79eca3c70c33f871f1ce8f528cf9ab5cfd76dd",
+    "account_no": "89H7O87L9",
+    "balance": 100.0,
+    "created_at": "2026-06-29 04:55:25",
+    "transactions": [
+      {
+        "type": "Initial Deposit",
+        "amount": 100.0,
+        "timestamp": "2026-06-29 04:55:25",
+        "balance_after": 100.0
+      }
+    ]
+  }
+]
